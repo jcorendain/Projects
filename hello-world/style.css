@@ -1,0 +1,42 @@
+body{
+    background-image: "img_kk.jpg";
+    
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+a:hover{
+    color:red;
+
+}
+
+h2 {
+        color: #000033;
+        font: normal 20px Arial;
+        line-height: 1.7em;
+}
+h3{
+    color: whitesmoke;
+    border: 5px black solid;
+    padding: 15px;
+    margin: 15px;
+
+}
+.information{
+    border: 3px;
+
+}
+.container{
+    widows: 80%;
+    margin: auto;
+}
+.categories {
+    border: 1px #cccccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+.p-block ul{
+    box-align: 14px;
+    box-sizing: border-box;
+}

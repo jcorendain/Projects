@@ -1,0 +1,128 @@
+.breakfast {
+    max-height: 350px;
+    /* trick to center using flexbox*/
+
+}
+
+.rounded {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    display: flex;
+    /* left to right*/
+    justify-content: center;
+
+}
+
+.columns {
+    background-color: blue;
+    min-height: 10rem;
+
+}
+
+.half {
+    width: 50%;
+    height: 5rem;
+}
+
+.red {
+    background-color: red;
+    float: left;
+}
+
+.green {
+    background-color: green;
+    float: right;
+
+}
+
+.no-more-floats {
+    clear: both;
+}
+.navbar-fixed{
+    height: 60px;
+    background-color:gray;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.content{
+    position: absolute;
+
+}
+.container{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 2em;
+    z-index: 0;
+}
+
+.chat-widget{
+    background-color: lightgreen;
+    padding: 1em;
+    border-radius: 10%;
+    color: white;
+    font-weight: 11;
+}
+.ver-front{
+    background-color: lightgreen;
+    padding: 1em;
+    border-radius: 10%;
+    color: white;
+    font-weight: 800;
+}
+.hero{
+    background:
+
+
+}
+.nav{
+    color:white;
+    min-height:6rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+ }
+ .nav ul li a {
+    color: white;
+    padding: 1em;
+    font-weight: 700%;
+    font-size: 1.5em;
+ }
+
+ /* media queries*/
+
+ @media (max-width: 600px) {
+     body {background-color: red; }
+     .nav{
+         min-height: 150px;
+     }
+ }
+
+ @media (min-width 600px){
+     body{ background-color: blue;}
+
+     .nav{
+         display: none;
+     }
+ }

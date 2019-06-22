@@ -1,0 +1,103 @@
+body {
+    background-color: antiquewhite;
+ 
+
+
+}
+a.link{
+    color:red;
+
+}
+a.visited{
+    color: blue;
+}
+a.hover{
+    color:orange;
+}
+a.active{
+    color: orangered;
+}
+p{
+    color: maroon;
+    font: Arial;
+    line-height: 1.5em;
+    padding: 25px;
+
+
+}
+h1{
+    color: rgb(179, 98, 98);
+    font: Arial;
+    border:2px solid Tomato;
+    text-align: center;
+    
+}
+.hot { 
+    padding: 5px;
+    align-content: center;
+
+}
+tr{
+    color: rgb(168, 13, 34);
+    font: Arial;
+    line-height: 1.4em;
+}
+.chili {
+    border: 1px #cccccc solid;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    backface-visibility: inherit;
+    text-align: center;
+    align-content: center;
+}
+li{
+
+    color: rgb(160, 23, 23);
+    font: Helvetica;
+    line-height: 1.6em;
+    text-align: center;
+}
+ul{
+    align-content: center;
+
+}
+.center{
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+}
+th{
+    vertical-align: center;
+
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.button{
+width: 400px;
+background-color: green;
+padding: 10px 20px;
+font-size: 16px;
+font-weight: 700;
+text-align: center;
+border: 1.1em;
+}
+.button:hover {
+
+    background-color: red;
+
+
+}
+#junkyard{
+
+    background-color: aqua;
+    font-size: 5em;
+    padding: 5px;
+    background-color: bisque;
+}
+.img{
+padding: 25px;
+max-height: 300px;
+border-radius: 60          px;
+
+}

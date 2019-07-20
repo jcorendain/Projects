@@ -2,23 +2,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial 1">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <meta http-equic="X-UA-Compatible" content="ie=edge">
     <title>OK Coders</title>
 
 <body>
-    <div id="music">
+    <div id="books">
         <h1 id="title"></h1>
         <h3 id="author"></h3>
     </div>
-    <input type="text" id="name" placeholder="Charles Dickens">
-    <button onClick="displayToScreen()">Set Author</button>
+    <div id="myList">
 
+    </div>
+    <div>
+        <input type="text" id="name" placeholder="Charles Dickens">
+        <input type="text" id="auth" placeholder="title">
+        <button onClick="displayToScreen()">Set Author</button>
+    </div>
     <script>
-        function displayToScreen() {
-                document.getElementById("author").innerText = document.getElementById("name").value;
+        var authors = ["Virgin Wolfr", "J.R.R. Token"];
+        var book1 = { author: "J.R.R. Tolken", title: "Lord of the Rings" };
+        var book2 = { author: "J.R.R. Tolken", title: "Lord of the Rings" };
+        var book3 = { title: "Blitxzavalg", author: "Reid Hoffman" };
+
+        let books = [book1, book2, book3];
+
+         function displayToScreen() {
+          let t = document.getElementById("name").value;
+         let n = document.getElementById("name").value;
+        
+            
+            books.push(t,n);
+              printAuthList();
+           }
+
+        function printAuthList() {
+            let auth = document.getElementById("myList");
+            auth.innerHTML = "";
+            for (let i = 0; i < books.length; i++) {
+                //     if ((i % 2) === 0) {
+                //       auth.innerHTML += "<h3 style='color:blue'>" + books[i].author;
+                //     auth.innerHTML += "<h3 style='color:blue'>" + books[i].title;
+                //} else {
+                auth.innerHTML += "<h2>" + books[i].title + "</h2>";
+                auth.innerHTML += "<h3>" + books[i].author + "</h3>";
+
+            }
+
+
+
+
         }
-       
+        printAuthList()
+
     </script>
 
 

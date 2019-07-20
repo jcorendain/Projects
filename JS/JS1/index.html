@@ -7,44 +7,33 @@
     <title>OK Coders</title>
 
 <body>
-    <script>
-     
-function calc(){
-    var a = parsInt(document.querySelector("#value1").value);
-    var b = parsInt(document.querySelector("#value2").value);
-    var op = document.querySelector("#operator").value;
-    var Calculate;
 
-    if (op == "add"){
-        Calculate = a + b;
-    } else if ( op == "min") {
-        var Calculate = a - b;
-        }else if ( op == "div") {
-        var Calculate = a - b;
-       } else if ( op == "mul") {
-        var Calculate = a - b;
-    }
-    document.querySelector("#results").innerHTML = Calculate;
-}
+
+    <script>
+        function displayToScreen(someText) {
+            document.write(someText);
+        }
+
+        let ourList = ["one", "two", "3", "four"];
+
+        ourList[3] = "hELLO";
+        ourList.push("sNAKES");
+        ourList[ourlist.length] = "Even another thing";
+
+        delete ourList[4];
+
+        for (let i = 0; i < ourList.length; i++) {
+            displayToScreen(ourList[i]);
+            document.write("<br>");
+        }
 
     </script>
 
-    <form>
-        Value 1: <input type="value1">
-        Value 2: <input type="value2">
-        Operator: 
-        <select id="operator">
-            <option vaule="add">ADD</option>
-            <option vaule="min">MINUS</option>
-            <option vaule="div">DIVIDE</option>
-            <option vaule="mul">multiply</option>
-            
-        </select>
-        <button type="button" onClick="calc()">Calculate</button>
-    </form>
-<div id = "results">
 
-</div>
+
+
+
+
 </body>
 </head>
 

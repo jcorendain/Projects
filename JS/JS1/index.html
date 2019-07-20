@@ -7,26 +7,18 @@
     <title>OK Coders</title>
 
 <body>
-
+    <div id="music">
+        <h1 id="title"></h1>
+        <h3 id="author"></h3>
+    </div>
+    <input type="text" id="name" placeholder="Charles Dickens">
+    <button onClick="displayToScreen()">Set Author</button>
 
     <script>
-        function displayToScreen(someText) {
-            document.write(someText);
+        function displayToScreen() {
+                document.getElementById("author").innerText = document.getElementById("name").value;
         }
-
-        let ourList = ["one", "two", "3", "four"];
-
-        ourList[3] = "hELLO";
-        ourList.push("sNAKES");
-        ourList[ourlist.length] = "Even another thing";
-
-        delete ourList[4];
-
-        for (let i = 0; i < ourList.length; i++) {
-            displayToScreen(ourList[i]);
-            document.write("<br>");
-        }
-
+       
     </script>
 
 
